@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import { SiHomeadvisor } from "react-icons/si";
 
 const Nav = () => {
   const navLinks = (
@@ -41,9 +42,10 @@ const Nav = () => {
             {navLinks}
           </ul>
         </div>
-        <div>         
-          <Link to='/' className="font-bold text-xl md:text-3xl ">
-            <h1 className="hover:scale-110 transition-transform">Home<span className="text-[#3fb89a]">Harbor</span></h1>
+        <div className="flex items-center gap-2 relative hover:scale-110 transition-transform">    
+          <SiHomeadvisor size={80} className="text-[#3fb89a] -top-4 -left-4 z-0"/>     
+          <Link to='/' className="font-bold text-3xl ">
+            <h1 className="z-10 absolute top-5 left-4">Home<span className="text-[#3fb89a]">Harbor</span></h1>
           </Link>
         </div>
       </div>
@@ -53,7 +55,7 @@ const Nav = () => {
       <div className="navbar-end mr-4 ">
         {/* dynamic login and profile */}
         <Link to="login">
-          <button className="px-6 py-2  bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform">
+          <button className="md:px-6 px-2 py-2  bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform">
             Login
           </button>
         </Link>
