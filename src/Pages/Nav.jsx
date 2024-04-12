@@ -42,9 +42,9 @@ const Nav = () => {
           </ul>
         </div>
         <div>         
-          <a className="font-bold text-xl md:text-3xl">
-            Home<span className="text-[#3fb89a]">Harbor</span>
-          </a>
+          <Link to='/' className="font-bold text-xl md:text-3xl ">
+            <h1 className="hover:scale-110 transition-transform">Home<span className="text-[#3fb89a]">Harbor</span></h1>
+          </Link>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -53,7 +53,7 @@ const Nav = () => {
       <div className="navbar-end mr-4 ">
         {/* dynamic login and profile */}
         <Link to="login">
-          <button className="px-6 py-2 rounded-2xl bg-[#3fb89a] font-bold hover:bg-[#398572]">
+          <button className="px-6 py-2  bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform">
             Login
           </button>
         </Link>

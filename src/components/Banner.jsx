@@ -19,7 +19,7 @@ const Banner = () => {
             tailored to your lifestyle. Find the perfect space that feels like
             home.
           </p>
-          <div className=""> 
+          <div className="">
             <label className="input input-bordered flex items-center gap-2">
               <input type="text" className="grow w-full" placeholder="Search" />
               <svg
@@ -38,16 +38,23 @@ const Banner = () => {
           </div>
           <div className="mt-10 ">
             <Link to="/login">
-              <button className=" w-1/5 md:w-1/4 md:px-6 py-2 mr-6 bg-[#3fb89a] font-bold hover:bg-[#398572]">
+              <button className=" w-1/5 md:w-1/4 md:px-6 py-2 mr-6 bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform">
                 Login
               </button>
             </Link>
-            <Link to="/login">
-              <button className=" w-1/4 md:px-6 py-2  bg-[#3fb89a] font-bold hover:bg-[#398572]">
+            <Link to="/register">
+              <button className=" w-1/4 md:px-6 py-2  bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform">
                 Register
               </button>
             </Link>
           </div>
+          {/* <div className="flex gap-16">
+            <div className="h-20 w-20 border-2 bg-red-200 transition-transform rotate-45 hover:rotate-90 flex items-center justify-center">
+                <h1 className="text-black -rotate-45">H</h1>
+            </div>
+            <div className="h-20 w-20 border-2 bg-red-200 transition-transform rotate-45 hover:rotate-90 hover:bg-yellow-400 "></div>
+            <div className="h-20 w-20 border-2 bg-red-200 transition-transform rotate-45 hover:rotate-90"></div>
+          </div> */}
         </div>
       </div>
     </div>

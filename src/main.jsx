@@ -10,6 +10,8 @@ import MainLayout from './MainLayout/MainLayout';
 import Home from './Pages/Home';
 import Properties from './Pages/Properties';
 import ContactUs from './Pages/ContactUs';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
       {
         path: "/contact-us",
         element: <ContactUs/>
+      },
+      {
+        path: "/login",
+        element: <Login/>
+      },
+      {
+        path: "/register",
+        element: <Register/>
       }
     ]
   },
