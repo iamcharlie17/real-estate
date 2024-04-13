@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://example.com/image1.jpg",
+    "image": "https://i.ibb.co/gWMfbks/luxury-villa.jpg",
     "estate_title": "Luxury Villa",
     "id": 1,
     "segment_name": "Residential",
@@ -13,7 +13,7 @@
     "view_property_button": "View Property"
   },
   {
-    "image": "https://example.com/image2.jpg",
+    "image": "https://i.ibb.co/KDtzDn3/cozy-townhouse.jpg",
     "estate_title": "Cozy Townhouse",
     "id": 2,
     "segment_name": "Residential",
@@ -26,7 +26,7 @@
     "view_property_button": "View Property"
   },
   {
-    "image": "https://example.com/image3.jpg",
+    "image": "https://i.ibb.co/xDgDYZG/modern-apartment.jpg",
     "estate_title": "Modern Apartment",
     "id": 3,
     "segment_name": "Residential",
@@ -39,7 +39,7 @@
     "view_property_button": "View Property"
   },
   {
-    "image": "https://example.com/image4.jpg",
+    "image": "https://i.ibb.co/sbx3gRB/student-housing.jpg",
     "estate_title": "Student Housing",
     "id": 4,
     "segment_name": "Residential",
@@ -52,7 +52,7 @@
     "view_property_button": "View Property"
   },
   {
-    "image": "https://example.com/image5.jpg",
+    "image": "https://i.ibb.co/zH0RNf2/family-home.jpg",
     "estate_title": "Family Home",
     "id": 5,
     "segment_name": "Residential",
@@ -65,7 +65,7 @@
     "view_property_button": "View Property"
   },
   {
-    "image": "https://example.com/image6.jpg",
+    "image": "https://i.ibb.co/jTSqvZP/beachfront-condo.jpg",
     "estate_title": "Beachfront Condo",
     "id": 6,
     "segment_name": "Residential",
@@ -78,7 +78,7 @@
     "view_property_button": "View Property"
   },
   {
-    "image": "https://example.com/image7.jpg",
+    "image": "https://i.ibb.co/0XpKQx2/senior-living-community.jpg",
     "estate_title": "Senior Living Community",
     "id": 7,
     "segment_name": "Residential",
@@ -91,7 +91,7 @@
     "view_property_button": "View Property"
   },
   {
-    "image": "https://example.com/image8.jpg",
+    "image": "https://i.ibb.co/M7NV5wk/mountain-view-home.jpg",
     "estate_title": "Mountain View Home",
     "id": 8,
     "segment_name": "Residential",
@@ -104,7 +104,7 @@
     "view_property_button": "View Property"
   },
   {
-    "image": "https://example.com/image9.jpg",
+    "image": "https://i.ibb.co/Vjk5GPH/riverside-cottage.jpg",
     "estate_title": "Riverside Cottage",
     "id": 9,
     "segment_name": "Residential",
