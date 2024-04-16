@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Los Angeles",
+        "image": "https://i.ibb.co/0s0BCFB/los-angeles.jpg"
+    },
+    {
+        "name": "Melbourne",
+        "image": "https://i.ibb.co/1bCswFd/melbourne.jpg"
+    },
+    {
+        "name": "San Francisco",
+        "image": "https://i.ibb.co/3dFW0QV/san-francisco.jpg"
+    },
+    {
+        "name": "Sedney",
+        "image": "https://i.ibb.co/37Rz9QM/sydney.jpg"
+    }
+]

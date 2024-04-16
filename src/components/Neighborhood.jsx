@@ -1,0 +1,50 @@
+
+import { useEffect, useState } from "react";
+import { FaArrowRight } from "react-icons/fa";
+
+const Neighborhood = () => {
+  const [neighbors, setNeighbors] = useState([]);
+  useEffect(() => {
+    fetch("neighborhood.json")
+      .then((r) => r.json())
+      .then((data) => setNeighbors(data));
+  }, []);
+  return (
+    <div className="bg-[#cef7ec] p-4 md:p-16 space-y-4">
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-xl uppercase font-bold text-[#3fb89a]">Top areas</h1>
+          <h1 className="text-3xl font-semibold">Find Your Neighborhood</h1>
+        </div>
+        <button className="md:px-6 px-2 py-2 text-white bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform">
+          Explore More
+        </button>
+      </div>
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 gridcol1 gap-4">
+        {neighbors.map((n, idx) => (
+          <div key={idx}>
+            <div className="rounded-lg bg-white ">
+              <div
+                className=" h-64 bg-cover"
+                style={{
+                  backgroundImage: `url(${n.image})`,
+                }}
+              ></div>
+              <div className="flex justify-between items-center p-8 ">
+                <div>
+                  <h1 className="text-gray-500">2 Properties</h1>
+                  <h1 className="font-bold text-xl">{n.name}</h1>
+                </div>
+                <button className="p-3 rounded-full bg-[#cef7ec]">
+                    <FaArrowRight size={25} className="text-[#3fb89a] -rotate-45"/>
+                </button> 
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Neighborhood;

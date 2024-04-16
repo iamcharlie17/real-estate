@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { useState } from "react";
 
 const Login = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
+  const handleTogglePassword = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
     <div className="min-h-screen py-32 mx-2">
       <div className=" hover:scale-105 transition-transform w-full mx-auto  max-w-md p-8 space-y-3 rounded-xl bg-[#3fb89a] text-white shadow-xl shadow-blue-400">
@@ -14,20 +22,37 @@ const Login = () => {
               type="email"
               name="email"
               placeholder="Email address"
-              className="w-full px-4 py-3 rounded-md  text-gray-100 focus:border-violet-400"
+              className="w-full px-4 py-3 rounded-md  text-black focus:border-violet-400"
+              required
             />
           </div>
-          <div className="space-y-1 text-sm">
+          <div className="space-y-1 text-sm relative">
             <label htmlFor="password" className="block">
               Password
             </label>
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               name="password"
               id="password"
               placeholder="Password"
-              className="w-full px-4 py-3 rounded-md  text-gray-100 focus:border-violet-400"
+              className="w-full px-4 py-3 rounded-md  text-black focus:border-violet-400"
+              required
             />
+            {showPassword ? (
+              <FaEyeSlash
+                onClick={handleTogglePassword}
+                color="black"
+                size={20}
+                className="absolute top-8 right-2"
+              />
+            ) : (
+              <FaEye
+                onClick={handleTogglePassword}
+                color="black"
+                size={20}
+                className="absolute top-8 right-2"
+              />
+            )}
             <div className="flex justify-end text-xs ">
               <a rel="noopener noreferrer" href="#">
                 Forgot Password?
@@ -78,7 +103,7 @@ const Login = () => {
             to="/register"
             rel="noopener noreferrer"
             href="#"
-            className="underline text-gray-100 text-[#0A4781]"
+            className="underline text-[#0A4781]"
           >
             Register
           </Link>

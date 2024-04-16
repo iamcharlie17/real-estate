@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Andren Willium",
+    "company_name": "Sunshine",
+    "photo": "https://i.ibb.co/2K2yy2L/agent1.png",
+    "listings": "08",
+    "cell_number": "+123 699 7700"
+  },
+  {
+    "name": "Polly Matzinger",
+    "company_name": "Sweet Home",
+    "photo": "https://i.ibb.co/YX0VGJK/agent2.png",
+    "listings": "07",
+    "cell_number": "+123 699 7700"
+  },
+  {
+    "name": "Patty Watson",
+    "company_name": "Eco Builders",
+    "photo": "https://i.ibb.co/Xx2RpZC/agent3.png",
+    "listings": "11",
+    "cell_number": "+123 699 7700"
+  },
+  {
+    "name": "Sarah Boysen",
+    "company_name": "Mark Street",
+    "photo": "https://i.ibb.co/kQ1qnSp/agent4.png",
+    "listings": "06",
+    "cell_number": "+123 699 7700"
+  }
+]
