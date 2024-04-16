@@ -5,18 +5,20 @@ import { FaCheck } from "react-icons/fa";
 const Facilities = () => {
   return (
     <div
-      className="p-16 flex gap-8 bg-cover bg-right-bottom bg-no-repeat"
+      className="p-4 md:p-16 flex flex-col lg:flex-row gap-8  "
       style={{
         background: `url(https://i.ibb.co/ZX9Vgz5/facility-bg.jpg)`,
         backgroundSize: "30%",
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'bottom right'
       }}
     >
-      <div className="bg-[#3fb89a] p-12 w-full">
-        <img src="https://i.ibb.co/GTgV4j1/facility-cover.jpg" alt="" />
+      <div className="bg-[#3fb89a] p-8 md:p-12 w-full flex items-center justify-center">
+        <img src="https://i.ibb.co/GTgV4j1/facility-cover.jpg" alt=""  />
       </div>
-      <div className="p-12 space-y-4">
+      <div className="md:p-12 space-y-4">
         <h1 className="text-2xl text-[#3fb89a] font-bold uppercase">
-          Why chose our Properties?
+          Why choose our Properties?
         </h1>
         <h2 className="text-3xl font-semibold">
           The experts in local and international property
