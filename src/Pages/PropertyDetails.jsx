@@ -4,10 +4,10 @@ import { FaCheck } from "react-icons/fa";
 const PropertyDetails = () => {
   const properties = useLoaderData();
   const id = useParams();
-  console.log(properties, id);
 
-  const property = properties.find((p) => p.id == id.id);
-  console.log(property);
+
+  const property = properties.find(p => p.id == id.id);
+
   const {
     area,
     description,
@@ -19,7 +19,6 @@ const PropertyDetails = () => {
     segment_name,
     status,
   } = property;
-  console.log(image);
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-8 pt-32 min-h-screen border-2 border-red-400">
       <div className="">

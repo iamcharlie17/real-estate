@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 
 const Nav = () => {
   const { user, logOut } = useContext(AuthContext);
+  // console.log(user)
 
   const handleLogOut = (e) => {
     e.preventDefault();
@@ -82,12 +83,11 @@ const Nav = () => {
         {/* dynamic login and profile */}
         {user ? (
           <details className="dropdown dropdown-end">
-            <summary className="btn bg-[#3fb89a] border-none rounded-full px-2 hover:bg-[#398572]">
-              {" "}
-              <div className="tooltip" data-tip="Profile">
+            <summary
+              className="btn bg-[#3fb89a] border-none rounded-full px-2 hover:bg-[#398572] tooltip flex"
+              data-tip="Profile"
+            >
               <CgProfile size={30} color="white" />
-              </div>
-              
             </summary>
             <div className="p-4 shadow menu dropdown-content z-[1] bg-[#3fb89a] rounded-box w-80 space-y-8">
               <div className="text-center space-y-2">
@@ -103,7 +103,6 @@ const Nav = () => {
                 <div className="font-bold h-24">
                   {user.displayName && <h1>Name: {user.displayName}</h1>}
                   {user.email && <h1>Email: {user.email}</h1>}
-                  {user.phoneNumber && <h1>Contact No: {user.phoneNumber}</h1>}
                 </div>
               </div>
               <div className="flex gap-2">
@@ -113,9 +112,12 @@ const Nav = () => {
                 >
                   Log Out
                 </button>
-                <button className="block w-full p-1 text-center rounded-sm text-white font-bold bg-[#0A4781]">
-                  Update Profile
-                </button>
+                <Link
+                  to="/update-profile"
+                  className="flex items-center justify-center w-full p-1 text-center  rounded-sm text-white font-bold bg-[#0A4781]"
+                >
+                  <button>Update Profile</button>
+                </Link>
               </div>
             </div>
           </details>

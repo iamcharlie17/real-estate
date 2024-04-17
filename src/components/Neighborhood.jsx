@@ -35,8 +35,8 @@ const Neighborhood = () => {
                   <h1 className="text-gray-500">2 Properties</h1>
                   <h1 className="font-bold text-xl">{n.name}</h1>
                 </div>
-                <button className="p-3 rounded-full bg-[#cef7ec]">
-                    <FaArrowRight size={25} className="text-[#3fb89a] -rotate-45"/>
+                <button className="p-3 rounded-full bg-[#cef7ec] text-[#3fb89a] hover:text-white hover:bg-[#398572] hover:rotate-45 transition-transform">
+                    <FaArrowRight size={25} className=" -rotate-45"/>
                 </button> 
               </div>
             </div>

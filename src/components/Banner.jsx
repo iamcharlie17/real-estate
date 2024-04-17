@@ -1,6 +1,21 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../providers/FirebaseProvider";
+import toast from "react-hot-toast";
 
 const Banner = () => {
+  const { user } = useContext(AuthContext);
+
+  const handleLogIn =(e)=>{
+    e.preventDefault()
+    toast("Already logged in", {
+      duration: 1500,
+      style: {
+        background: "#3fb89a",
+        color: "white",
+      },
+    });
+  }
   return (
     <div
       className="hero min-h-screen banner"
@@ -37,11 +52,21 @@ const Banner = () => {
             </label>
           </div>
           <div className="mt-10 ">
-            <Link to="/login">
-              <button className=" w-1/5 md:w-1/4 md:px-6 py-2 mr-6 bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform">
-                Login
-              </button>
-            </Link>
+            {user ? (
+              (
+              <Link to="/">
+                <button onClick={handleLogIn} className=" w-1/5 md:w-1/4 md:px-6 py-2 mr-6 bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform">
+                  Login
+                </button>
+              </Link>
+              )
+            ) : (
+              <Link to="/login">
+                <button className=" w-1/5 md:w-1/4 md:px-6 py-2 mr-6 bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform">
+                  Login
+                </button>
+              </Link>
+            )}
             <Link to="/register">
               <button className=" w-1/4 md:px-6 py-2  bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform">
                 Register

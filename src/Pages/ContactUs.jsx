@@ -1,8 +1,8 @@
-import { useLocation } from "react-router-dom";
+
 
 const ContactUs = () => {
-  const location = useLocation()
-  console.log(location)
+  // const location = useLocation()
+  // console.log(location)
   return (
    <div className="min-h-screen py-32">
      <div className="grid max-w-screen-xl gap-8 px-4 my-auto py-20  mx-auto text-white rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 bg-[#3fb89a] ">

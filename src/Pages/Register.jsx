@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
 
-  const { registerUser } = useContext(AuthContext);
+  const { registerUser, updateUser } = useContext(AuthContext);
 
   const navigate = useNavigate();
 
@@ -24,42 +24,35 @@ const Register = () => {
   function validatePassword(password) {
     const regex = /^(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
     return regex.test(password);
-}
+  }
 
   const onSubmit = (data) => {
-    // if(data.password.length < 6){
-    //   toast("Password must be minimum 6 characters", {
-    //     duration: 1500,
-    //     style: {
-    //       background: "red",
-    //       color: "white",
-    //     },
-    //   })
-    //   return;
-    // }
-    // else if(data.password)
-    if(!validatePassword(data.password)){
-      toast("Password must have UPPERCASE, lowercase and longer than 6 characters", {
-        duration: 1500,
-        style: {
-          background: "red",
-          color: "white",
-        },
-      })
-      return;
-    }
-    
-
-    registerUser(data.email, data.password)
-      .then(() => {
-        toast("Successfully Registered Your Account", {
+    if (!validatePassword(data.password)) {
+      toast(
+        "Password must have UPPERCASE, lowercase and longer than 6 characters",
+        {
           duration: 1500,
           style: {
-            background: "#3fb89a",
+            background: "red",
             color: "white",
           },
+        }
+      );
+      return;
+    }
+    console.log(data);
+    registerUser(data.email, data.password)
+      .then(() => {
+        updateUser(data.name, data.image).then(() => {
+          toast("Successfully Registered Your Account", {
+            duration: 1500,
+            style: {
+              background: "#3fb89a",
+              color: "white",
+            },
+          });
+          navigate("/");
         });
-        navigate("/");
       })
       .catch((e) => {
         toast(`${e.message}`, {
@@ -98,8 +91,9 @@ const Register = () => {
               Photo URL
             </label>
             <input
+              {...register("image")}
               type="text"
-              name="photo-url"
+              name="image"
               placeholder="Enter your photo URL"
               className="w-full px-4 py-3 rounded-md text-black focus:border-violet-400"
             />
@@ -124,10 +118,7 @@ const Register = () => {
               Password
             </label>
             <input
-              {...register(
-                "password",
-                { required: true }
-              )}
+              {...register("password", { required: true })}
               type={showPassword ? "text" : "password"}
               name="password"
               id="password"

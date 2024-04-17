@@ -13,6 +13,7 @@ import Register from "./Pages/Register";
 import FirebaseProvider from "./providers/FirebaseProvider";
 import PropertyDetails from "./Pages/PropertyDetails";
 import PrivateRoute from "./PrivateRoutes/PrivateRoute";
+import UpdateProfile from "./components/UpdateProfile";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register />,
       },
+      {
+        path: '/update-profile',
+        element: <UpdateProfile/>
+      }
       
     ],
   },

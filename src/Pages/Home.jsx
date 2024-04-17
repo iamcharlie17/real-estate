@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import Brand from "../components/Brand";
 import Facilities from "../components/Facilities";
 import Neighborhood from "../components/Neighborhood";
+import Reviews from "../components/Reviews";
 import Properties from "./Properties";
 
 
@@ -15,6 +16,7 @@ const Home = () => {
             <Facilities/>
             <Neighborhood/>
             <Agents/>
+            <Reviews/>
         </div>
     );
 };
