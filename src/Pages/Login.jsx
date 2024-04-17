@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -12,6 +12,8 @@ const Login = () => {
     useContext(AuthContext);
 
   const navigate = useNavigate();
+  const location = useLocation();
+  console.log(location.state);
 
   const handleTogglePassword = () => {
     setShowPassword(!showPassword);
@@ -46,76 +48,18 @@ const Login = () => {
       );
   };
 
-  const handleGoogleLogIn = (e) => {
-    e.preventDefault();
-    googleLogIn()
-      .then(() => {
-        toast("Successfully Logged In Google", {
-          duration: 1500,
-          style: {
-            background: "#3fb89a",
-            color: "white",
-          },
-        });
-        navigate("/");
+  const handleSocialLogin = (socialLogin) => {
+    socialLogin().then(() => {
+      toast("Successfully Logged In ", {
+        duration: 1500,
+        style: {
+          background: "#3fb89a",
+          color: "white",
+        },
       })
-      .catch((e) => {
-        toast(`${e.message}`, {
-          duration: 1500,
-          style: {
-            background: "red",
-            color: "white",
-          },
-        });
-      });
+      navigate(location?.state || '/')
+    })
   };
-  const handleGithubLogIn = (e) =>{
-    e.preventDefault()
-    githubLogIn()
-    .then(() => {
-      toast("Successfully Logged In Github", {
-        duration: 1500,
-        style: {
-          background: "#3fb89a",
-          color: "white",
-        },
-      });
-      navigate("/");
-    })
-    .catch((e) => {
-      toast(`${e.message}`, {
-        duration: 1500,
-        style: {
-          background: "red",
-          color: "white",
-        },
-      });
-    });
-  }
-  const handleTwitterLogIn = (e) =>{
-    e.preventDefault()
-    twitterLogIn()
-    .then((r) => {
-      console.log(r.user)
-      toast("Successfully Logged In Twitter", {
-        duration: 1500,
-        style: {
-          background: "#3fb89a",
-          color: "white",
-        },
-      });
-      navigate("/");
-    })
-    .catch((e) => {
-      toast(`${e.message}`, {
-        duration: 1500,
-        style: {
-          background: "red",
-          color: "white",
-        },
-      });
-    });
-  }
 
   return (
     <div className="min-h-screen py-32 mx-2">
@@ -179,13 +123,13 @@ const Login = () => {
           <div className="flex-1 h-px sm:w-16 bg-gray-700"></div>
         </div>
         <div className="flex justify-center space-x-4 gap-4">
-          <button onClick={handleGoogleLogIn} className="">
+          <button onClick={() => handleSocialLogin(googleLogIn)} className="">
             <FaGoogle size={30} />
           </button>
-          <button onClick={handleGithubLogIn}>
+          <button onClick={() => handleSocialLogin(githubLogIn)}>
             <FaGithub size={30} />
           </button>
-          <button onClick={handleTwitterLogIn}>
+          <button onClick={() => handleSocialLogin(twitterLogIn)}>
             <FaTwitter size={30} />
           </button>
         </div>

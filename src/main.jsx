@@ -11,6 +11,8 @@ import ContactUs from "./Pages/ContactUs";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import FirebaseProvider from "./providers/FirebaseProvider";
+import PropertyDetails from "./Pages/PropertyDetails";
+import PrivateRoute from "./PrivateRoutes/PrivateRoute";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,12 +24,16 @@ const router = createBrowserRouter([
       },
       {
         path: "/properties",
-        element: <Properties />,
-        loader: () => fetch("properties.json"),
+        element: <PrivateRoute><Properties/></PrivateRoute>,
+      },
+      {
+        path: '/property/:id',
+        loader: ()=> fetch('properties.json'),
+        element:<PrivateRoute><PropertyDetails/></PrivateRoute>
       },
       {
         path: "/contact-us",
-        element: <ContactUs />,
+        element: <PrivateRoute><ContactUs /></PrivateRoute>,
       },
       {
         path: "/login",
@@ -37,6 +43,7 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register />,
       },
+      
     ],
   },
 ]);

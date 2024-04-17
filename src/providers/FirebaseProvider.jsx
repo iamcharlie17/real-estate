@@ -10,10 +10,12 @@ const twitterProvider = new TwitterAuthProvider(null)
 const FirebaseProvider = ({children}) => {
 
     const [user, setUser] = useState(null);
+    const [loading, setLoading] = useState(true)
 
     useEffect(()=>{
         const unSubscribe = onAuthStateChanged(auth, (user)=>{
             setUser(user);
+            setLoading(false);
         })
         return ()=>{
             unSubscribe()
@@ -22,21 +24,26 @@ const FirebaseProvider = ({children}) => {
     console.log(user)
 
     const registerUser = (email, password)=>{
+        setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
     }
     const loginUser = (email, password) =>{
+        setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
     const logOut = ()=>{
         return signOut(auth);
     }
     const googleLogIn = ()=>{
+        setLoading(true)
         return signInWithPopup(auth, googleProvider)
     }
     const githubLogIn = ()=>{
+        setLoading(true)
         return signInWithPopup(auth, githubProvider);
     }
     const twitterLogIn = () =>{
+        setLoading(true)
         return signInWithPopup(auth, twitterProvider)
     }
    
@@ -48,7 +55,8 @@ const FirebaseProvider = ({children}) => {
         logOut,
         googleLogIn,
         githubLogIn,
-        twitterLogIn
+        twitterLogIn,
+        loading
     }
 
     return (

@@ -1,12 +1,21 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { FaChartArea } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 // signboard --> https://i.ibb.co/9sG1tmv/signboard.png
 
 const Property = ({ property }) => {
   // console.log(property);
-  const { image, estate_title, location, area, segment_name, price, status } =
-    property;
+  const {
+    image,
+    estate_title,
+    location,
+    area,
+    segment_name,
+    price,
+    status,
+    id,
+  } = property;
   // console.log(status);
   return (
     <div className="border-2 rounded-xl shadow-lg bg-white relative property-container hover:scale-105 transition-transform">
@@ -36,15 +45,21 @@ const Property = ({ property }) => {
           </p>
         </div>
         {status === "sale" ? (
-          <h1 className=" font-bold text-xl px-2 text-white bg-[#3fb89a] ">SALE</h1>
+          <h1 className=" font-bold text-xl px-2 text-white bg-[#3fb89a] ">
+            SALE
+          </h1>
         ) : (
-          <h1 className=" font-bold text-xl px-2 text-white bg-[#3fb89a]">RENT</h1>
+          <h1 className=" font-bold text-xl px-2 text-white bg-[#3fb89a]">
+            RENT
+          </h1>
         )}
       </div>
       <div className="text-center my-4">
-        <button className="md:px-6 px-2 py-2 text-white bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform">
-          View Property
-        </button>
+        <Link property="property" to={`/property/${id}`}>
+          <button className="md:px-6 px-2 py-2 text-white bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform">
+            View Property
+          </button>
+        </Link>
       </div>
     </div>
   );

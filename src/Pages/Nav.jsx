@@ -100,7 +100,7 @@ const Nav = () => {
                     </button>
                   )}
                 </div>
-                <div className="font-bold">
+                <div className="font-bold h-24">
                   {user.displayName && <h1>Name: {user.displayName}</h1>}
                   {user.email && <h1>Email: {user.email}</h1>}
                   {user.phoneNumber && <h1>Contact No: {user.phoneNumber}</h1>}
