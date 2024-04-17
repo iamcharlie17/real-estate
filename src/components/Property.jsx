@@ -4,10 +4,10 @@ import { FaChartArea } from "react-icons/fa";
 // signboard --> https://i.ibb.co/9sG1tmv/signboard.png
 
 const Property = ({ property }) => {
-  console.log(property);
+  // console.log(property);
   const { image, estate_title, location, area, segment_name, price, status } =
     property;
-  console.log(status);
+  // console.log(status);
   return (
     <div className="border-2 rounded-xl shadow-lg bg-white relative property-container hover:scale-105 transition-transform">
       <div

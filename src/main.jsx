@@ -1,49 +1,51 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Toaster } from 'react-hot-toast';
 
-import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import MainLayout from './MainLayout/MainLayout';
-import Home from './Pages/Home';
-import Properties from './Pages/Properties';
-import ContactUs from './Pages/ContactUs';
-import Login from './Pages/Login';
-import Register from './Pages/Register';
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import MainLayout from "./MainLayout/MainLayout";
+import Home from "./Pages/Home";
+import Properties from "./Pages/Properties";
+import ContactUs from "./Pages/ContactUs";
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
+import FirebaseProvider from "./providers/FirebaseProvider";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout/>,
+    element: <MainLayout />,
     children: [
       {
         path: "/",
-        element: <Home/>
+        element: <Home />,
       },
       {
         path: "/properties",
-        element: <Properties/>,
-        loader: ()=> fetch('properties.json'),
+        element: <Properties />,
+        loader: () => fetch("properties.json"),
       },
       {
         path: "/contact-us",
-        element: <ContactUs/>
+        element: <ContactUs />,
       },
       {
         path: "/login",
-        element: <Login/>
+        element: <Login />,
       },
       {
         path: "/register",
-        element: <Register/>
-      }
-    ]
+        element: <Register />,
+      },
+    ],
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-       <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+    <FirebaseProvider>
+      <RouterProvider router={router} />
+      <Toaster />
+    </FirebaseProvider>
+  </React.StrictMode>
+);

@@ -48,13 +48,6 @@ const Banner = () => {
               </button>
             </Link>
           </div>
-          {/* <div className="flex gap-16">
-            <div className="h-20 w-20 border-2 bg-red-200 transition-transform rotate-45 hover:rotate-90 flex items-center justify-center">
-                <h1 className="text-black -rotate-45">H</h1>
-            </div>
-            <div className="h-20 w-20 border-2 bg-red-200 transition-transform rotate-45 hover:rotate-90 hover:bg-yellow-400 "></div>
-            <div className="h-20 w-20 border-2 bg-red-200 transition-transform rotate-45 hover:rotate-90"></div>
-          </div> */}
         </div>
       </div>
     </div>

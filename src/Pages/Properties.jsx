@@ -12,7 +12,7 @@ const Properties = () => {
         .then(r => r.json())
         .then(data => setProperties(data));
     },[])
-    console.log(properties);
+    // console.log(properties);
 
     return (
         <div className="bg-[#e7f9f4] -z-20 px-4 py-8 md:px-16 md:py-20">

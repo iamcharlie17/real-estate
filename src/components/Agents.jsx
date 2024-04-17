@@ -9,7 +9,7 @@ const Agents = () => {
       .then((data) => setAgents(data));
   }, []);
 
-  console.log(agents);
+  // console.log(agents);
 
   return (
     <div className="md:p-16 p-4 space-y-4">
@@ -22,8 +22,8 @@ const Agents = () => {
           <div key={idx} className="p-4 md:p-8 shadow-lg rounded-lg space-y-4">
             <div className="flex justify-center relative ">
               <img src={a.photo} alt="" />
-              <div className="px-2 py-1 absolute bottom-4 left-4 bg-white rounded-lg hover:bg-[#3fb89a] ">
-                <button className="hover:text-white text-[#3fb89a]">{a.listings} Listings</button>
+              <div className=" absolute bottom-4 left-4 bg-white rounded-lg hover:bg-[#3fb89a] ">
+                <button className="px-2 py-1 hover:text-white text-[#3fb89a]">{a.listings} Listings</button>
               </div>
               <div className=" absolute right-0 ">
                 <a href="">

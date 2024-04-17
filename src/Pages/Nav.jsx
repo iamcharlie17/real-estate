@@ -1,7 +1,28 @@
 import { Link, NavLink } from "react-router-dom";
 import { SiHomeadvisor } from "react-icons/si";
+import { useContext } from "react";
+import { AuthContext } from "../providers/FirebaseProvider";
+import { CgProfile } from "react-icons/cg";
+import toast from "react-hot-toast";
 
 const Nav = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = (e) => {
+    e.preventDefault();
+    logOut()
+      .then(() =>
+        toast("Logged Out", {
+          duration: 1500,
+          style: {
+            background: "#3fb89a",
+            color: "white",
+          },
+        })
+      )
+      .catch((e) => console.log(e.message));
+  };
+
   const navLinks = (
     <>
       <li>
@@ -42,10 +63,15 @@ const Nav = () => {
             {navLinks}
           </ul>
         </div>
-        <div className="flex items-center gap-2 relative hover:scale-110 transition-transform">    
-          <SiHomeadvisor size={80} className="text-[#3fb89a] -top-4 -left-4 z-0"/>     
-          <Link to='/' className="font-bold text-3xl ">
-            <h1 className="z-10 absolute top-5 left-4">Home<span className="text-[#3fb89a]">Harbor</span></h1>
+        <div className="flex items-center gap-2 relative hover:scale-110 transition-transform">
+          <SiHomeadvisor
+            size={80}
+            className="text-[#3fb89a] -top-4 -left-4 z-0"
+          />
+          <Link to="/" className="font-bold text-3xl ">
+            <h1 className="z-10 absolute top-5 left-4">
+              Home<span className="text-[#3fb89a]">Harbor</span>
+            </h1>
           </Link>
         </div>
       </div>
@@ -54,11 +80,52 @@ const Nav = () => {
       </div>
       <div className="navbar-end mr-4 ">
         {/* dynamic login and profile */}
-        <Link to="login">
-          <button className="md:px-6 px-2 py-2  bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform">
-            Login
-          </button>
-        </Link>
+        {user ? (
+          <details className="dropdown dropdown-end">
+            <summary className="btn bg-[#3fb89a] border-none rounded-full px-2 hover:bg-[#398572]">
+              {" "}
+              <div className="tooltip" data-tip="Profile">
+              <CgProfile size={30} color="white" />
+              </div>
+              
+            </summary>
+            <div className="p-4 shadow menu dropdown-content z-[1] bg-[#3fb89a] rounded-box w-80 space-y-8">
+              <div className="text-center space-y-2">
+                <div className="">
+                  {user.photoURL ? (
+                    <img className="w-1/3 mx-auto" src={user.photoURL} alt="" />
+                  ) : (
+                    <button className="rounded-full px-3 border-2 text-6xl font-bold bg-white text-[#3fb89a]">
+                      {user.email.substring(0, 1).toUpperCase()}
+                    </button>
+                  )}
+                </div>
+                <div className="font-bold">
+                  {user.displayName && <h1>Name: {user.displayName}</h1>}
+                  {user.email && <h1>Email: {user.email}</h1>}
+                  {user.phoneNumber && <h1>Contact No: {user.phoneNumber}</h1>}
+                </div>
+              </div>
+              <div className="flex gap-2">
+                <button
+                  onClick={handleLogOut}
+                  className="block w-full p-1 text-center rounded-sm text-white font-bold bg-[#0A4781]"
+                >
+                  Log Out
+                </button>
+                <button className="block w-full p-1 text-center rounded-sm text-white font-bold bg-[#0A4781]">
+                  Update Profile
+                </button>
+              </div>
+            </div>
+          </details>
+        ) : (
+          <Link to="login">
+            <button className="md:px-6 px-2 py-2  bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform">
+              Login
+            </button>
+          </Link>
+        )}
       </div>
     </div>
   );
