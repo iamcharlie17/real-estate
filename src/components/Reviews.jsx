@@ -17,10 +17,22 @@ const Reviews = () => {
   return (
     <div className="bg-[#cef7ec] p-8 md:p-16">
       <div className="text-center space-y-4 mb-4 md:mb-16">
-        <h1 className="text-2xl font-semibold text-[#3fb89a]">
+        <h1
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          className="text-2xl font-semibold text-[#3fb89a]"
+        >
           CUSTOMER REVIEWS
         </h1>
-        <h2 className="text-4xl font-black">What is Our Customer Say</h2>
+        <h2
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+          className="text-4xl font-black"
+        >
+          What is Our Customer Say
+        </h2>
       </div>
       <Swiper
         spaceBetween={30}

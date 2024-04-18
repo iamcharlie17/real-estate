@@ -14,16 +14,39 @@ const Agents = () => {
   return (
     <div className="md:p-16 p-4 space-y-4">
       <div className="text-center">
-        <h1 className="text-xl font-bold text-[#3fb89a]">EXPERTISE IS HERE</h1>
-        <h1 className="text-3xl font-semibold">Our Exclusive Agents</h1>
+        <h1
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          className="text-xl font-bold text-[#3fb89a]"
+        >
+          EXPERTISE IS HERE
+        </h1>
+        <h1
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+          className="text-3xl font-semibold"
+        >
+          Our Exclusive Agents
+        </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {agents.map((a, idx) => (
-          <div key={idx} className="p-4 md:p-8 shadow-lg rounded-lg space-y-4">
+          <div
+            data-aos="zoom-in-right"
+            data-aos-duration="1000"
+            data-aos-delay={`${idx}00`}
+            data-aos-easing="ease-in-out"
+            key={idx}
+            className="p-4 md:p-8 shadow-lg rounded-lg space-y-4"
+          >
             <div className="flex justify-center relative ">
               <img src={a.photo} alt="" />
               <div className=" absolute bottom-4 left-4 bg-white rounded-lg hover:bg-[#3fb89a] ">
-                <button className="px-2 py-1 hover:text-white text-[#3fb89a]">{a.listings} Listings</button>
+                <button className="px-2 py-1 hover:text-white text-[#3fb89a]">
+                  {a.listings} Listings
+                </button>
               </div>
               <div className=" absolute right-0 ">
                 <a href="">

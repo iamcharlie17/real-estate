@@ -18,7 +18,13 @@ const Property = ({ property }) => {
   } = property;
   // console.log(status);
   return (
-    <div className="border-2 rounded-xl shadow-lg bg-white relative property-container hover:scale-105 transition-transform">
+    <div
+      data-aos="zoom-in-down"
+      data-aos-duration="1000"
+      data-aos-delay={`200`}
+      data-aos-easing="ease-in-out"
+      className="border-2 rounded-xl shadow-lg bg-white relative property-container hover:scale-105 transition-transform"
+    >
       <div
         className="h-64 bg-cover"
         style={{
