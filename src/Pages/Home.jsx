@@ -4,6 +4,7 @@ import Brand from "../components/Brand";
 import Facilities from "../components/Facilities";
 import JoinAgent from "../components/JoinAgent";
 import Neighborhood from "../components/Neighborhood";
+import PropertyBanner from "../components/PropertyBanner";
 import Reviews from "../components/Reviews";
 import Stats from "../components/Stats";
 import Properties from "./Properties";
@@ -17,6 +18,7 @@ const Home = () => {
             <Properties/>
             <Facilities/>
             <Neighborhood/>
+            <PropertyBanner/>
             <Agents/>
             <JoinAgent/>
             <Stats/>
