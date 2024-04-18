@@ -86,14 +86,11 @@ const Facilities = () => {
             <FaCheck color="#3fb89a" /> Market-leading researce
           </li>
         </ul>
-        <button
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-          data-aos-delay="2000"
-          className="md:px-6 px-2 py-2  bg-[#cef7ec] font-bold hover:bg-[#398572] hover:text-white hover:scale-110 transition-transform text-[#3fb89a]"
-        >
-          Read More
-        </button>
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="2000">
+          <button className="md:px-6 px-2 py-2  bg-[#cef7ec] font-bold hover:bg-[#398572] hover:text-white hover:scale-110 transition-transform text-[#3fb89a]">
+            Read More
+          </button>
+        </div>
       </div>
     </div>
   );

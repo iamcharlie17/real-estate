@@ -25,12 +25,8 @@ const JoinAgent = () => {
             </p>
           </div>
         </div>
-        <div>
-          <button
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            className="btn text-white bg-[#3fb89a] px-6 hover:bg-[#398572]"
-          >
+        <div data-aos="fade-left" data-aos-duration="1000">
+          <button className="btn text-white bg-[#3fb89a] px-6 hover:bg-[#398572] hover:scale-110 border-none">
             Join Now
           </button>
         </div>

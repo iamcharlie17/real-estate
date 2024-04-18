@@ -29,15 +29,16 @@ const Neighborhood = () => {
             Find Your Neighborhood
           </h1>
         </div>
-        <button
+        <div
           data-aos="zoom-in"
           data-aos-duration="1000"
           data-aos-delay="500"
           data-aos-easing="ease-in-out"
-          className="md:px-6 px-2 py-2 text-white bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform"
         >
-          Explore More
-        </button>
+          <button className="md:px-6 px-2 py-2 text-white bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform">
+            Explore More
+          </button>
+        </div>
       </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gridcol1 gap-4">
         {neighbors.map((n, idx) => (

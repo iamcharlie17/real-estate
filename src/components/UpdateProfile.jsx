@@ -17,8 +17,6 @@ const UpdateProfile = () => {
   
   
     const onSubmit = (data) => {
-        console.log(data.number)
-    
       updateUser(data.name, data.image, data.number)
       .then(()=>{
         toast("Profile updated", {
@@ -51,16 +49,13 @@ const UpdateProfile = () => {
               Your Name
             </label>
             <input
-              {...register("name", { required: true })}
+              {...register("name")}
               type="text"
               name="name"
               id="name"
               placeholder="Enter your name"
               className="w-full px-4 py-3 rounded-md  text-black focus:border-violet-400"
             />
-            {errors.name && (
-              <span className="text-red-400">This field is required</span>
-            )}
           </div>
           <div className="space-y-1 text-sm">
             <label htmlFor="image" className="block ">
