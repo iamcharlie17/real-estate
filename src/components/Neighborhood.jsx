@@ -16,6 +16,7 @@ const Neighborhood = () => {
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="100"
+            data-aos-once ={true}
             className="text-xl uppercase font-bold text-[#3fb89a]"
           >
             Top areas
@@ -24,6 +25,7 @@ const Neighborhood = () => {
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="300"
+            data-aos-once ={true}
             className="text-3xl font-semibold"
           >
             Find Your Neighborhood
@@ -34,6 +36,7 @@ const Neighborhood = () => {
           data-aos-duration="1000"
           data-aos-delay="500"
           data-aos-easing="ease-in-out"
+          data-aos-once ={true}
         >
           <button className="md:px-6 px-2 py-2 text-white bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform">
             Explore More
@@ -47,6 +50,7 @@ const Neighborhood = () => {
             data-aos-duration="1000"
             data-aos-delay={`${idx}00`}
             data-aos-easing="ease-in-out"
+            data-aos-once ={true}
             key={idx}
           >
             <div className="rounded-lg bg-white ">

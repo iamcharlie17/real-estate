@@ -5,6 +5,7 @@ const Brand = () => {
         <h1
           data-aos="fade-right"
           data-aos-duration="1000"
+          data-aos-once ={true}
           className="text-xl text-[#3fb89a] font-bold"
         >
           Our Clients
@@ -13,11 +14,12 @@ const Brand = () => {
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-delay="300"
+          data-aos-once ={true}
           className="text-3xl font-bold"
         >
           We are going to became partners for the long run
         </h1>
-        <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+        <p data-aos="fade-right" data-aos-duration="1000" data-aos-once ={true} data-aos-delay="600">
           <small>
             Ghen an unknown printer took a galley of type andscr ambledit to
             make a type specimen book has survived not only five centuries but
@@ -30,6 +32,7 @@ const Brand = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
+          data-aos-once ={true}
         >
           <img
             className="w-full  grayscale hover:grayscale-0 transition-transform hover:shadow-lg hover:shadow-green-200 hover:scale-110"
@@ -43,6 +46,7 @@ const Brand = () => {
           data-aos-duration="1000"
           data-aos-delay="100"
           data-aos-easing="ease-in-out"
+          data-aos-once ={true}
         >
           <img
             className="w-full  grayscale hover:grayscale-0 transition-transform hover:shadow-green-200 hover:shadow-lg hover:scale-110"
@@ -55,6 +59,7 @@ const Brand = () => {
           data-aos-duration="1000"
           data-aos-delay="200"
           data-aos-easing="ease-in-out"
+          data-aos-once ={true}
         >
           <img
             className="w-full grayscale hover:grayscale-0 transition-transform hover:shadow-green-200 hover:shadow-lg hover:scale-110"
@@ -67,6 +72,7 @@ const Brand = () => {
           data-aos-duration="1000"
           data-aos-delay="300"
           data-aos-easing="ease-in-out"
+          data-aos-once ={true}
         >
           <img
             className="w-full grayscale hover:grayscale-0 transition-transform hover:shadow-green-200 hover:shadow-lg hover:scale-110"
@@ -79,6 +85,7 @@ const Brand = () => {
           data-aos-duration="1000"
           data-aos-delay="400"
           data-aos-easing="ease-in-out"
+          data-aos-once ={true}
         >
           <img
             className="w-full grayscale hover:grayscale-0 transition-transform hover:shadow-green-200 hover:shadow-lg hover:scale-110"
@@ -91,6 +98,7 @@ const Brand = () => {
           data-aos-duration="1000"
           data-aos-delay="500"
           data-aos-easing="ease-in-out"
+          data-aos-once ={true}
         >
           <img
             className="w-full grayscale hover:grayscale-0 transition-transform hover:shadow-green-200 hover:shadow-lg hover:scale-110"

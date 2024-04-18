@@ -19,6 +19,7 @@ const Facilities = () => {
           data-aos-duration="1000"
           data-aos-delay={`200`}
           data-aos-easing="ease-in-out"
+          data-aos-once ={true}
           src="https://i.ibb.co/GTgV4j1/facility-cover.jpg"
           alt=""
         />
@@ -28,6 +29,7 @@ const Facilities = () => {
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
+          data-aos-once ={true}
           className="text-2xl text-[#3fb89a] font-bold uppercase"
         >
           Why choose our Properties?
@@ -37,6 +39,7 @@ const Facilities = () => {
           data-aos-duration="1000"
           data-aos-delay="200"
           data-aos-easing="ease-in-out"
+          data-aos-once ={true}
           className="text-3xl font-semibold"
         >
           The experts in local and international property
@@ -46,6 +49,7 @@ const Facilities = () => {
           data-aos-duration="1000"
           data-aos-delay="400"
           data-aos-easing="ease-in-out"
+          data-aos-once ={true}
           className="text-gray-500"
         >
           Agent hen an unknown printer took a galley of type and scramble d it
@@ -56,6 +60,7 @@ const Facilities = () => {
           <li
             data-aos="fade-right"
             data-aos-delay="500"
+            data-aos-once ={true}
             className="flex gap-2 items-center"
           >
             {" "}
@@ -64,6 +69,7 @@ const Facilities = () => {
           <li
             data-aos="fade-right"
             data-aos-delay="800"
+            data-aos-once ={true}
             className="flex gap-2 items-center"
           >
             {" "}
@@ -72,6 +78,7 @@ const Facilities = () => {
           <li
             data-aos="fade-right"
             data-aos-delay="1200"
+            data-aos-once ={true}
             className="flex gap-2 items-center"
           >
             {" "}
@@ -80,6 +87,7 @@ const Facilities = () => {
           <li
             data-aos="fade-right"
             data-aos-delay="1600"
+            data-aos-once ={true}
             className="flex gap-2 items-center"
           >
             {" "}

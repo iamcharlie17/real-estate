@@ -21,6 +21,7 @@ const Reviews = () => {
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-delay="300"
+          data-aos-once ={true}
           className="text-2xl font-semibold text-[#3fb89a]"
         >
           CUSTOMER REVIEWS
@@ -29,6 +30,7 @@ const Reviews = () => {
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-delay="500"
+          data-aos-once ={true}
           className="text-4xl font-black"
         >
           What is Our Customer Say

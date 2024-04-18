@@ -18,6 +18,7 @@ const Agents = () => {
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-delay="300"
+          data-aos-once ={true}
           className="text-xl font-bold text-[#3fb89a]"
         >
           EXPERTISE IS HERE
@@ -26,6 +27,7 @@ const Agents = () => {
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-delay="500"
+          data-aos-once ={true}
           className="text-3xl font-semibold"
         >
           Our Exclusive Agents
@@ -38,6 +40,7 @@ const Agents = () => {
             data-aos-duration="1000"
             data-aos-delay={`${idx}00`}
             data-aos-easing="ease-in-out"
+            data-aos-once ={true}
             key={idx}
             className="p-4 md:p-8 shadow-lg rounded-lg space-y-4"
           >

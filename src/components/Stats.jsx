@@ -14,6 +14,7 @@ const Stats = () => {
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="300"
+            data-aos-once ={true}
             className=" text-2xl md:text-4xl font-bold "
           >
             Real Estate by the Numbers
@@ -22,6 +23,7 @@ const Stats = () => {
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="500"
+            data-aos-once ={true}
             className="text-sm"
           >
             In 2022 things look like this percentage
@@ -33,6 +35,7 @@ const Stats = () => {
           data-aos-duration="1000"
           data-aos-delay={`100`}
           data-aos-easing="ease-in-out"
+          data-aos-once ={true}
           className="w-48 h-48 mx-auto  rounded-full flex items-center justify-center bg-gradient-to-b from-[#ffffff42] to-[#0A4781]">
             <div className="w-40 h-40 mx-auto  rounded-full flex items-center justify-center bg-gradient-to-b from-[#ffffff42] to-[#0A4781]">
               <div className="flex mx-auto h-32 w-32 flex-col items-center justify-center rounded-full bg-gradient-to-b from-[#ffffff42]  to-[#0A4781] ">
@@ -50,6 +53,7 @@ const Stats = () => {
           data-aos-duration="1000"
           data-aos-delay={`300`}
           data-aos-easing="ease-in-out"
+          data-aos-once ={true}
           className="w-48 h-48 mx-auto  rounded-full flex items-center justify-center bg-gradient-to-b from-[#ffffff42] to-[#0A4781]">
             <div className="w-40 h-40 mx-auto  rounded-full flex items-center justify-center bg-gradient-to-b from-[#ffffff42] to-[#0A4781]">
               <div className="flex mx-auto h-32 w-32 flex-col items-center justify-center rounded-full bg-gradient-to-b from-[#ffffff42] to-[#0A4781]">
@@ -67,6 +71,7 @@ const Stats = () => {
           data-aos-duration="1000"
           data-aos-delay={`500`}
           data-aos-easing="ease-in-out"
+          data-aos-once ={true}
           className="w-48 h-48 mx-auto  rounded-full flex items-center justify-center bg-gradient-to-b from-[#ffffff42] to-[#0A4781]">
             <div className="w-40 h-40 mx-auto  rounded-full flex items-center justify-center bg-gradient-to-b from-[#ffffff42] to-[#0A4781]">
               <div className="flex h-32 mx-auto w-32 flex-col items-center justify-center rounded-full bg-gradient-to-b from-[#ffffff42] to-[#0A4781]">
@@ -84,6 +89,7 @@ const Stats = () => {
           data-aos-duration="1000"
           data-aos-delay={`700`}
           data-aos-easing="ease-in-out"
+          data-aos-once ={true}
           className="w-48 h-48 mx-auto  rounded-full flex items-center justify-center bg-gradient-to-b from-[#ffffff42] to-[#0A4781]">
             <div className="w-40 h-40 mx-auto  rounded-full flex items-center justify-center bg-gradient-to-b from-[#ffffff42] to-[#0A4781]">
               <div className="flex mx-auto h-32 w-32 flex-col items-center justify-center rounded-full bg-gradient-to-b from-[#ffffff42] to-[#0A4781]">

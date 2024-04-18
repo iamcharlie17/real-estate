@@ -8,6 +8,7 @@ const JoinAgent = () => {
           <div
             data-aos="fade-right"
             data-aos-duration="1000"
+            data-aos-once={true}
             className="p-4 bg-white rounded-full"
           >
             <FaUsers color="#3fb89a" size={30} />
@@ -16,16 +17,17 @@ const JoinAgent = () => {
             <h1
               data-aos="fade-down"
               data-aos-duration="1000"
+              data-aos-once={true}
               className="text-3xl font-semibold"
             >
               Become an Agent
             </h1>
-            <p data-aos="fade-up" data-aos-duration="1000">
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-once={true}>
               Agent hen an unknown printer took a galley scramble
             </p>
           </div>
         </div>
-        <div data-aos="fade-left" data-aos-duration="1000">
+        <div data-aos="fade-left" data-aos-duration="1000" data-aos-once ={true}>
           <button className="btn text-white bg-[#3fb89a] px-6 hover:bg-[#398572] hover:scale-110 border-none">
             Join Now
           </button>

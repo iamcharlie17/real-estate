@@ -31,16 +31,17 @@ const Banner = () => {
             <h1
               data-aos="fade-right"
               data-aos-duration="1000"
+              data-aos-once ={true}
               className="mb-5 text-3xl md:text-4xl lg:text-5xl font-bold"
             >
               Discover Your <br /> Dream Home Today!
             </h1>
-            <p data-aos="fade-left" data-aos-duration="1000" className="mb-5">
+            <p data-aos="fade-left" data-aos-duration="1000" data-aos-once ={true} className="mb-5">
               Explore a curated selection of stunning residential properties
               tailored to your lifestyle. Find the perfect space that feels like
               home.
             </p>
-            <div data-aos="fade-up" data-aos-duration="1000">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once ={true}>
               <label className="input input-bordered flex items-center gap-2">
                 <input
                   type="text"
@@ -69,6 +70,7 @@ const Banner = () => {
                     data-aos-duration="1000"
                     data-aos-delay="500"
                     data-aos-easing="ease-in-out"
+                    data-aos-once ={true}
                     onClick={handleLogIn}
                     className=" w-1/5 md:w-1/4 md:px-6 py-2 mr-6 bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform"
                   >
@@ -82,6 +84,7 @@ const Banner = () => {
                     data-aos-duration="1000"
                     data-aos-delay="500"
                     data-aos-easing="ease-in-out"
+                    data-aos-once ={true}
                     className=" w-1/5 md:w-1/4 md:px-6 py-2 mr-6 bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform"
                   >
                     Login
@@ -94,6 +97,7 @@ const Banner = () => {
                   data-aos-duration="1000"
                   data-aos-delay="500"
                   data-aos-easing="ease-in-out"
+                  data-aos-once ={true}
                   className=" w-1/4 md:px-6 py-2  bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform"
                 >
                   Register
@@ -116,16 +120,17 @@ const Banner = () => {
             <h1
               data-aos="fade-right"
               data-aos-duration="1000"
+              data-aos-once ={true}
               className="mb-5 text-3xl md:text-4xl lg:text-5xl font-bold"
             >
               Discover Your <br /> Dream Home Today!
             </h1>
-            <p data-aos="fade-left" data-aos-duration="1000" className="mb-5">
+            <p data-aos="fade-left" data-aos-duration="1000" data-aos-once ={true} className="mb-5">
               Explore a curated selection of stunning residential properties
               tailored to your lifestyle. Find the perfect space that feels like
               home.
             </p>
-            <div data-aos="fade-up" data-aos-duration="1000">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once ={true}>
               <label className="input input-bordered flex items-center gap-2">
                 <input
                   type="text"
@@ -154,6 +159,7 @@ const Banner = () => {
                     data-aos-duration="1000"
                     data-aos-delay="500"
                     data-aos-easing="ease-in-out"
+                    data-aos-once ={true}
                     onClick={handleLogIn}
                     className=" w-1/5 md:w-1/4 md:px-6 py-2 mr-6 bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform"
                   >
@@ -167,6 +173,7 @@ const Banner = () => {
                     data-aos-duration="1000"
                     data-aos-delay="500"
                     data-aos-easing="ease-in-out"
+                    data-aos-once ={true}
                     className=" w-1/5 md:w-1/4 md:px-6 py-2 mr-6 bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform"
                   >
                     Login
@@ -179,6 +186,7 @@ const Banner = () => {
                   data-aos-duration="1000"
                   data-aos-delay="500"
                   data-aos-easing="ease-in-out"
+                  data-aos-once ={true}
                   className=" w-1/4 md:px-6 py-2  bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform"
                 >
                   Register
@@ -201,16 +209,17 @@ const Banner = () => {
             <h1
               data-aos="fade-right"
               data-aos-duration="1000"
+              data-aos-once ={true}
               className="mb-5 text-3xl md:text-4xl lg:text-5xl font-bold"
             >
               Discover Your <br /> Dream Home Today!
             </h1>
-            <p data-aos="fade-left" data-aos-duration="1000" className="mb-5">
+            <p data-aos="fade-left" data-aos-duration="1000" data-aos-once ={true} className="mb-5">
               Explore a curated selection of stunning residential properties
               tailored to your lifestyle. Find the perfect space that feels like
               home.
             </p>
-            <div data-aos="fade-up" data-aos-duration="1000">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once ={true}>
               <label className="input input-bordered flex items-center gap-2">
                 <input
                   type="text"
@@ -239,6 +248,7 @@ const Banner = () => {
                     data-aos-duration="1000"
                     data-aos-delay="500"
                     data-aos-easing="ease-in-out"
+                    data-aos-once ={true}
                     onClick={handleLogIn}
                     className=" w-1/5 md:w-1/4 md:px-6 py-2 mr-6 bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform"
                   >
@@ -252,6 +262,7 @@ const Banner = () => {
                     data-aos-duration="1000"
                     data-aos-delay="500"
                     data-aos-easing="ease-in-out"
+                    data-aos-once ={true}
                     className=" w-1/5 md:w-1/4 md:px-6 py-2 mr-6 bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform"
                   >
                     Login
@@ -264,6 +275,7 @@ const Banner = () => {
                   data-aos-duration="1000"
                   data-aos-delay="500"
                   data-aos-easing="ease-in-out"
+                  data-aos-once ={true}
                   className=" w-1/4 md:px-6 py-2  bg-[#3fb89a] font-bold hover:bg-[#398572] hover:scale-110 transition-transform"
                 >
                   Register

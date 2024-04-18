@@ -22,11 +22,13 @@ const Properties = () => {
                     data-aos="fade-right"
                     data-aos-duration ="1000"
                     data-aos-delay ="100"
+                    data-aos-once ={true}
                     className="text-2xl text-[#3fb89a] font-bold">Our Properties</h1>
                     <h1 
                     data-aos="fade-right"
                     data-aos-duration ="1000"
                     data-aos-delay ="300"
+                    data-aos-once ={true}
                     className="text-3xl font-bold">Latest Properties</h1>
                 </div>
                 <div className="">
