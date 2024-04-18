@@ -12,7 +12,6 @@ const UpdateProfile = () => {
     const {
       register,
       handleSubmit,
-      formState: { errors },
     } = useForm();
   
   
@@ -42,7 +41,7 @@ const UpdateProfile = () => {
   return (
     <div className="min-h-screen py-32 mx-2">
       <div className=" hover:scale-105 transition-transform w-full mx-auto  max-w-md p-8 space-y-3 rounded-xl bg-[#3fb89a] text-white shadow-xl shadow-blue-400">
-        <h1 className="text-2xl font-bold text-center">Register</h1>
+        <h1 className="text-2xl font-bold text-center">Update Profile</h1>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           <div className="space-y-1 text-sm">
             <label htmlFor="name" className="block ">
