@@ -4,6 +4,7 @@ import Brand from "../components/Brand";
 import Facilities from "../components/Facilities";
 import Neighborhood from "../components/Neighborhood";
 import Reviews from "../components/Reviews";
+import Stats from "../components/Stats";
 import Properties from "./Properties";
 
 
@@ -16,6 +17,7 @@ const Home = () => {
             <Facilities/>
             <Neighborhood/>
             <Agents/>
+            <Stats/>
             <Reviews/>
         </div>
     );
