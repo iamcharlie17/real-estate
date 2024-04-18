@@ -14,6 +14,7 @@ import FirebaseProvider from "./providers/FirebaseProvider";
 import PropertyDetails from "./Pages/PropertyDetails";
 import PrivateRoute from "./PrivateRoutes/PrivateRoute";
 import UpdateProfile from "./components/UpdateProfile";
+import NotFound from "./Pages/NotFound";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       
     ],
   },
+  {
+    path: '*',
+    element: <NotFound/>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
