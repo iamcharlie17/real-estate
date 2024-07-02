@@ -1,41 +1,64 @@
-# Residential Real Estate Website
+# HomeHarbor
 
-This project is a [HomeHarbor](https://real-state-assignment-9.web.app/) showcasing the use of various technologies and libraries including `aos-animation`, `swiper slider`, `useForm hook`, `react-icons`, `DaisyUI`, `Tailwind CSS`, and `Google Firebase` for authentication and deployment.
+## Overview
+HomeHarbor is a comprehensive real estate platform featuring a user-friendly front-end, secure authentication, and detailed website statistics. It offers property listings, advanced search functionality, and user profiles, providing a seamless experience for buyers, sellers, and real estate agents.
 
-## Technologies Used
+## Live Site
+- [HomeHarbor](https://real-state-assignment-9.web.app/)
 
-### AOS-Animation
+## Features
+- User-friendly front-end design
+- Secure authentication
+- Detailed website statistics
+- Property listings
+- Advanced search functionality
+- User profiles
+- Property details pages
+- Contact forms for inquiries
+- Responsive design for mobile, tablet, and desktop
 
-[AOS](https://michalsnik.github.io/aos/) is a library to animate elements as you scroll down, and it's been used in this project to create engaging and interactive animations.
+## Technologies
+<div>
+  <h2>Technologies</h2>
+  <div>
+    <img src="https://skillicons.dev/icons?i=html,css,javascript,react,tailwind,firebase" />
+ </div>
+  <h1>Tools</h1>
+  <img src="https://skillicons.dev/icons?i=vscode,github,git" />
+</div>
 
-### Swiper Slider
+## How to Clone and Run the Project
 
-[Swiper](https://swiperjs.com/) is a modern touch slider which is focused on performance and is used to create sliders and carousels. It has been implemented in this project to display content in an interactive and dynamic manner.
+### Prerequisites
+- Node.js (v14.x or later)
+- npm (v6.x or later)
 
-### useForm Hook
+### Steps
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/iamcharlie17/real-estate.git
+    ```
+2. **Navigate to the project directory:**
+    ```bash
+    cd real-estate
+    ```
+3. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+4. **Set up environment variables:**
+   - Create a `.env` file in the root directory.
+   - Add the necessary variables (replace with your actual values):
+     ```plaintext
+     REACT_APP_API_URL=your_api_url
+     REACT_APP_JWT_SECRET=your_jwt_secret
+     ```
+5. **Run the development server:**
+    ```bash
+    npm start
+    ```
 
-The [useForm hook](https://react-hook-form.com/) is a custom React hook for managing form state and validation. It has been utilized in this project to handle form submissions and manage form state efficiently.
-
-### React Icons
-
-[React Icons](https://react-icons.github.io/react-icons/) is a popular library for including popular icons in your React projects. It has been used to enhance the UI by adding various icons throughout the application.
-
-### DaisyUI
-
-[DaisyUI](https://daisyui.com/) is a component library for Tailwind CSS that provides a set of beautiful and customizable UI components. It has been used to build the user interface and improve the overall design of the application.
-
-### Tailwind CSS
-
-[Tailwind CSS](https://tailwindcss.com/) is a utility-first CSS framework that has been used in this project for styling the application. It offers a set of utility classes that make it easy to build custom designs without leaving your HTML.
-
-### Google Firebase
-
-[Google Firebase](https://firebase.google.com/) is a comprehensive suite of tools and services for building web and mobile applications. In this project, Firebase has been used for:
-
-- **Authentication**: Firebase Authentication has been used to handle user authentication and secure user data.
-  
-- **Deployment**: Firebase Hosting has been used to deploy the application and make it accessible to users.
-
-
-
-
+6. **Build for production:**
+    ```bash
+    npm run build
+    ```
